@@ -17,8 +17,7 @@ export default function ChatContainer() {
     }
 
     return (
-        <div className="w-96 h-96 border border-gray-300 rounded-md shadow-md flex flex-col p-4">
-            <div className="p-4 font-semibold text-gray-700">ChatBot</div>
+        <div className="w-96 h-96 rounded-md flex flex-col p-4 object-contain">
             <MessageList messages={messages} />
             <InputArea onSend={handleSendMessage} />
         </div>
