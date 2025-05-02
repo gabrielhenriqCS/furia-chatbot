@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import MessageItem from './MessageItem';
 
-export default function MessageList({ messages }) {
+function MessageList({ messages }) {
     const messagesEndRef = useRef(null);
 
     const scrollToBottom = () => {
@@ -13,11 +13,13 @@ export default function MessageList({ messages }) {
     }, [messages])
 
     return (
-        <div className="flex flex-col items-center overflow-y-auto h-full p-4">
+        <div className="flex flex-col justify-start items-stretch overflow-y-auto p-3 h-full">
             {messages.map((message, index) => (
                 <MessageItem key={index} message={message} />
             ))}
-            <div ref={messagesEndRef} /> 
+            <div ref={messagesEndRef} />
         </div>
     );
 }
+
+export default MessageList;

@@ -10,9 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/radio": "^2.3.16",
+    "@heroui/system": "^2.4.13",
+    "@heroui/theme": "^2.4.13",
     "@tailwindcss/vite": "^4.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "framer-motion": "^12.9.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
