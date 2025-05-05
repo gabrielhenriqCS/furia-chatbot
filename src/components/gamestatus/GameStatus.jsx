@@ -11,8 +11,8 @@ function GameStatus() {
         <p>Horário: 16:00 BRT</p>
         <p className="mt-2 font-bold">Ao Vivo:</p>
         <p>FURIA <span className="font-bold text-green-500">1</span> - <span className="font-bold text-red-500">0</span> BAYMASTERS</p>
-        <p className="text-sm dark:text-amber-50 text-gray-600">Mapa: Inferno</p>
-        <p className="text-sm dark:text-amber-50 text-gray-600">Rodadas: 12 - 8</p>
+        <p className="text-sm">Mapa: Inferno</p>
+        <p className="text-sm">Rodadas: 12 - 8</p>
       </div>
     </div>
   );

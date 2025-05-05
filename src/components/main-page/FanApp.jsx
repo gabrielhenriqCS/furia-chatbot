@@ -26,20 +26,20 @@ function FanApp() {
       className={`min-h-screen py-6 ${
         theme === "dark"
           ? "bg-gray-900 text-gray-200"
-          : "bg-gray-100 text-gray-800"
+          : "bg-white text-gray-800" 
       }`}
     >
       <header
         className={`flex justify-center py-4 ${
           theme === "dark"
             ? "bg-gray-800 text-white"
-            : "bg-furia-primary text-white"
+            : "bg-furia-primary text-white" 
         }`}
       >
         <div className="flex flex-row items-center">
           <h1
             className={`text-3xl font-bold ${
-              theme === "dark" ? "text-white" : "text-gray-800"
+              theme === "dark" ? "text-white" : "text-gray-800" // Cor do título
             }`}
           >
             Comunidade FURIA CS
@@ -47,37 +47,37 @@ function FanApp() {
           <img src={LogoFuria} alt="logo do site" className="w-10 ml-3" />
         </div>
         <img
-          src={theme === "dark" ? LightThemeIcon : DarkThemeIcon} // Alterne os ícones
+          src={theme === "dark" ? LightThemeIcon : DarkThemeIcon}
           alt="theme icon"
-          className="w-10 ml-3 cursor-pointer"
+          className="w-10 ml-3 cursor-pointer not-dark:invert"
           onClick={toggleTheme}
         />
       </header>
       <div className="container mx-auto mt-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <div
           className={`md:col-span-2 lg:col-span-3 rounded-md shadow-md overflow-hidden h-full ${
-            theme === "dark" ? "bg-gray-800 text-white" : "bg-white"
+            theme === "dark" ? "bg-gray-800 text-white" : "bg-white text-black" 
           }`}
         >
           <ChatSection />
         </div>
         <div
           className={`rounded-md shadow-md p-4 ${
-            theme === "dark" ? "bg-gray-700 text-white" : "bg-blue-100"
+            theme === "dark" ? "bg-gray-700 text-white" : "bg-white" 
           }`}
         >
           <GameStatus />
         </div>
         <div
           className={`rounded-md shadow-md p-4 ${
-            theme === "dark" ? "bg-gray-800 text-white" : "bg-white"
+            theme === "dark" ? "bg-gray-800 text-white" : "bg-white text-black" 
           }`}
         >
           <NewsFeed />
         </div>
         <div
           className={`rounded-md shadow-md p-4 ${
-            theme === "dark" ? "bg-gray-700 text-white" : "bg-blue-100"
+            theme === "dark" ? "bg-gray-700 text-white" : "bg-white text-black" 
           }`}
         >
           <PollsArea />
@@ -87,12 +87,12 @@ function FanApp() {
         className={`py-2 text-center mt-4 ${
           theme === "dark"
             ? "bg-gray-800 text-white"
-            : "bg-gray-200 text-gray-600"
+            : "bg-gray-200 text-gray-600" 
         }`}
       >
         <p
           className={`text-sm font-bold ${
-            theme === "dark" ? "text-blue-400" : "text-blue-900"
+            theme === "dark" ? "text-blue-400" : "text-blue-900" 
           }`}
         >
           #GOFURIA

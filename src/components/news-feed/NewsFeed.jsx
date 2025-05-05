@@ -14,7 +14,7 @@ function NewsFeed() {
         {news.map(item => (
           <li key={item.id} className="mb-3 border-b border-gray-200 pb-2">
             <h3 className="font-semibold">{item.title}</h3>
-            <p className="text-sm dark:text-amber-100 text-gray-700">{item.content}</p>
+            <p className="text-sm">{item.content}</p>
           </li>
         ))}
       </ul>
